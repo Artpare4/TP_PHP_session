@@ -1,0 +1,32 @@
+{
+    "name": "pare0028/php-session",
+    "description": "Gestion des données de session: choix d'un pays",
+    "type": "project",
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.26"
+    },
+    "license": "Copyleft",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arthur Parent",
+            "email": "artpare4@gmail.com"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "test:cs": "php vendor/bin/php-cs-fixer fix --dry-run",
+        "fix:cs": "php vendor/bin/php-cs-fixer fix",
+        "start:linux": "bin/run-server.sh",
+        "start:Windows": "bin/run-server.bat",
+        "start": "@composer start:linux"
+    },
+    "config": {
+        "process-timeout": 0
+    }
+
+}
